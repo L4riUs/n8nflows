@@ -2,7 +2,7 @@ FROM n8nio/n8n:latest
 
 USER root
 
-RUN mkdir -p /data &&b crown -R node:node /data
+RUN mkdir -p /data &&b chown -R node:node /data
 
 USER node
 
